@@ -1,5 +1,8 @@
 @use 'hero';
-@use 'variaveis';
+@use './components/variaveis';
+@use 'components/infosBar';
+@use 'components/buttons';
+@use 'event';
 
 
 
@@ -9,6 +12,7 @@
     box-sizing: border-box;
     font-family: roboto, sans-serif;
     color: variaveis.$corParagrafo;
+    list-style: none;
 }
 
 .container {

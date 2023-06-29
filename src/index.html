@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorig>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
 </head>
 <body>
@@ -16,10 +17,66 @@
         <div class="container">
             <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
             <p class="hero__text">
-                O maior evento de tecnologia do  brasil começa 10d 12h 20m 15s
+                O maior evento de tecnologia do  brasil começa <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Alianz Parque - Barra funda - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        Apartir de r$ 120,00 reais
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        30/07/2023 ás 19h
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta sua vaga
+                </a>
+            </div>
         </div>
     </header>
+    <section class="event event--frontend" >
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">front-End</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, magnam inventore. Repudiandae explicabo laudantium dolores quam ipsam eveniet voluptatibus nulla velit aperiam omnis, alias reiciendis ullam dolore accusamus fuga commodi! Totam accusamus fugit expedita debitis facilis. Facilis alias impedit error quisquam iusto, voluptatibus culpa nisi modi est illum voluptates earum inventore numquam repellat repellendus aliquam accusantium assumenda. Obcaecati temporibus explicabo sunt officia error voluptas cumque distinctio consequatur iusto quisquam. Omnis delectus eius aliquam doloribus vitae harum reprehenderit nisi. Molestiae ducimus harum reiciendis, dolorum, numquam omnis voluptatibus enim dolorem sit aliquam nobis! Ab nisi quisquam aperiam repellendus culpa aspernatur quaerat, doloribus porro sapiente voluptatum cupiditate hic atque repudiandae ipsam, necessitatibus earum delectus vero alias recusandae qui enim. Amet sequi delectus aliquid!</p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="front-End">
+        </div>
+    </section>
+    <section class="event event--ux-ui event--image-left" >
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Ux/UI</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, magnam inventore. Repudiandae explicabo laudantium dolores quam ipsam eveniet voluptatibus nulla velit aperiam omnis, alias reiciendis ullam dolore accusamus fuga commodi! Totam accusamus fugit expedita debitis facilis. Facilis alias impedit error quisquam iusto, voluptatibus culpa nisi modi est illum voluptates earum inventore numquam repellat repellendus aliquam accusantium assumenda. Obcaecati temporibus explicabo sunt officia error voluptas cumque distinctio consequatur iusto quisquam. Omnis delectus eius aliquam doloribus vitae harum reprehenderit nisi. Molestiae ducimus harum reiciendis, dolorum, numquam omnis voluptatibus enim dolorem sit aliquam nobis! Ab nisi quisquam aperiam repellendus culpa aspernatur quaerat, doloribus porro sapiente voluptatum cupiditate hic atque repudiandae ipsam, necessitatibus earum delectus vero alias recusandae qui enim. Amet sequi delectus aliquid!</p>
+            </div>
+            <img class="event__image" src="./images/ui-ux.png" alt="ux/ui">
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Data science</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, magnam inventore. Repudiandae explicabo laudantium dolores quam ipsam eveniet voluptatibus nulla velit aperiam omnis, alias reiciendis ullam dolore accusamus fuga commodi! Totam accusamus fugit expedita debitis facilis. Facilis alias impedit error quisquam iusto, voluptatibus culpa nisi modi est illum voluptates earum inventore numquam repellat repellendus aliquam accusantium assumenda. Obcaecati temporibus explicabo sunt officia error voluptas cumque distinctio consequatur iusto quisquam. Omnis delectus eius aliquam doloribus vitae harum reprehenderit nisi. Molestiae ducimus harum reiciendis, dolorum, numquam omnis voluptatibus enim dolorem sit aliquam nobis! Ab nisi quisquam aperiam repellendus culpa aspernatur quaerat, doloribus porro sapiente voluptatum cupiditate hic atque repudiandae ipsam, necessitatibus earum delectus vero alias recusandae qui enim. Amet sequi delectus aliquid!</p>
+            </div>
+            <img class="event__image" src="./images/data.png" alt="data science">
+        </div>
+    </section>
+    <section class="event event--backend event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Back-End</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, magnam inventore. Repudiandae explicabo laudantium dolores quam ipsam eveniet voluptatibus nulla velit aperiam omnis, alias reiciendis ullam dolore accusamus fuga commodi! Totam accusamus fugit expedita debitis facilis. Facilis alias impedit error quisquam iusto, voluptatibus culpa nisi modi est illum voluptates earum inventore numquam repellat repellendus aliquam accusantium assumenda. Obcaecati temporibus explicabo sunt officia error voluptas cumque distinctio consequatur iusto quisquam. Omnis delectus eius aliquam doloribus vitae harum reprehenderit nisi. Molestiae ducimus harum reiciendis, dolorum, numquam omnis voluptatibus enim dolorem sit aliquam nobis! Ab nisi quisquam aperiam repellendus culpa aspernatur quaerat, doloribus porro sapiente voluptatum cupiditate hic atque repudiandae ipsam, necessitatibus earum delectus vero alias recusandae qui enim. Amet sequi delectus aliquid!</p>
+            </div>
+            <img class="event__image " src="./images/backend.png" alt="backend">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
